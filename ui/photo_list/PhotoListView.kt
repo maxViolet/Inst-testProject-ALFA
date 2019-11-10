@@ -3,7 +3,7 @@ package com.android.insta_testproject_alfa.ui.photo_list
 import com.android.insta_testproject_alfa.room.models.PhotoItem
 import com.arellomobile.mvp.MvpView
 
-interface PhotoListView : MvpView{
+interface PhotoListView : MvpView {
 
     fun showLoading()
 
@@ -11,5 +11,10 @@ interface PhotoListView : MvpView{
 
     fun showPhotos(photos: List<PhotoItem>)
 
+    fun addNewPhoto(photo: PhotoItem)
+
     fun showError(error: String)
+
+    fun takePhoto()
+
 }
